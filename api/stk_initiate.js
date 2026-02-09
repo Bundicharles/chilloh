@@ -34,7 +34,7 @@ export default async function handler(req, res) {
   // Sandbox credentials
   const consumerKey = "Eh64RXurzaOaQwhGwmUtctIZAE4sCbhXlZtPaXC8sdAC1LDH";
   const consumerSecret = "Gt1dK1Q0TwoieFdmIgmoJG11saYpyqTOOyPqsHJWnH80v2E2A9u4DKg0HQu73uIn";
-  const BusinessShortCode = "174379";
+  const BusinessShortCode = "8339968";
   const Passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
   const Timestamp = new Date().toISOString().replace(/[-:TZ.]/g, "").slice(0, 14);
   const Password = Buffer.from(BusinessShortCode + Passkey + Timestamp).toString("base64");
