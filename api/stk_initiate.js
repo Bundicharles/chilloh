@@ -38,7 +38,7 @@ export default async function handler(req, res) {
   const Passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
   const Timestamp = new Date().toISOString().replace(/[-:TZ.]/g, "").slice(0, 14);
   const Password = Buffer.from(BusinessShortCode + Passkey + Timestamp).toString("base64");
-  const CallBackURL = "https://chilloh-w8ve.vercel.app/api/callback"; // Local callback for testing
+  const CallBackURL = "https://chilloh-w8ve.vercel.app/api/stk_callback"; // Local callback for testing
 
   try {
     // Get access token
