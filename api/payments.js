@@ -17,3 +17,8 @@ export default async function handler(req, res) {
 
   return res.status(200).json(data);
 }
+function formatMpesaDate(value) {
+  if (!value) return "—";
+  const s = value.toString();
+  return `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)} ${s.slice(8,10)}:${s.slice(10,12)}:${s.slice(12,14)}`;
+}
